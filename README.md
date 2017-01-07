@@ -2,8 +2,6 @@
 
 An universal React isomorphic boilerplate for building server side render web app.
 
-[![dependencies Status](https://david-dm.org/chikara-chan/react-isomorphic-boilerplate/status.svg)](https://david-dm.org/chikara-chan/react-isomorphic-boilerplate) [![devDependencies Status](https://david-dm.org/chikara-chan/react-isomorphic-boilerplate/dev-status.svg)](https://david-dm.org/chikara-chan/react-isomorphic-boilerplate?type=dev) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/chikara-chan/react-isomorphic-boilerplate/pulls) [![npm](https://img.shields.io/npm/l/express.svg)](https://github.com/chikara-chan/react-isomorphic-boilerplate/blob/master/LICENSE)
-
 ## Introduction
 
 This repository is an universal React isomorphic boilerplate for developer to quickly build a super fast and powerful web app that can be rendered both on the client and on the server using the most cutting-edge technology. Compared to others, this boilerplate has more pithily and more elegant configuration file based on environment variables, one for development, one for production. In addition, the directory structure is organized corresponding to mvc principle aim at the best practice.
@@ -17,8 +15,7 @@ This repository is an universal React isomorphic boilerplate for developer to qu
 - [Sass](https://github.com/sass/sass)
 - [PostCSS](https://github.com/postcss/postcss)
 - [CSS Modules](https://github.com/css-modules/css-modules)
-- [Koa](https://github.com/koajs/koa)
-- [Koa+](https://github.com/koajs)
+- [express](https://github.com/expressjs/express)
 - [Webpack](https://github.com/webpack/webpack)
 - [Webpack+](https://webpack.js.org/loaders/)
 - [Babel](https://github.com/babel/babel)
@@ -102,10 +99,6 @@ It happens when run in development mode. This is caused by deprecated using [ext
 
 It happens also when run in development mode. This is caused by when you update the react component code and reload the page, the markup generated mismatches that on server render. However, once you restart the server, the checksum will be valid. So it is harmless, ignore it also.
 
-## Links
-
-[http://www.jianshu.com/p/0ecd727107bb](http://www.jianshu.com/p/0ecd727107bb)
-
 ## License
 
-[MIT](https://github.com/chikara-chan/react-isomorphic-boilerplate/blob/master/LICENSE)
+[MIT](https://github.com/cllgeek/mern-boilerplate/blob/master/LICENSE)
