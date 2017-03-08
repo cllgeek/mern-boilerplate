@@ -8,11 +8,11 @@ if (typeof require.ensure !== 'function') {
 const routes = {
     childRoutes: [{
         path: '/',
-        component: require('./common/containers/Root'),
+        component: require('./common/containers/Root').default,
         indexRoute: {
             getComponent(nextState, callback) {
                 require.ensure([], require => {
-                    callback(null, require('./home/containers/App'))
+                    callback(null, require('./home/containers/App').default)
                 }, 'home')
             }
         },
@@ -20,14 +20,14 @@ const routes = {
             path: 'explore',
             getComponent(nextState, callback) {
                 require.ensure([], require => {
-                    callback(null, require('./explore/containers/App'))
+                    callback(null, require('./explore/containers/App').default)
                 }, 'explore')
             }
         }, {
             path: 'about',
             getComponent(nextState, callback) {
                 require.ensure([], require => {
-                    callback(null, require('./about/containers/App'))
+                    callback(null, require('./about/containers/App').default)
                 }, 'about')
             }
         }]
